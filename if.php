@@ -19,9 +19,21 @@ else{
 }
 
 
-if ($a >= 10 && $a <= 500 ){
-  echo 'yes its equal to this ';
+if (!($a >= 10 && $a <= 500 )){
+  echo '<br> yes its equal to this ';
 
+}
+else {
+  echo 'not operatoe works ';
+}
+
+
+$age = 10 ;
+if (!($age >= 20)){
+  echo 'logoc is correct ';
+}
+else {
+  echo 'logic is altered ';
 }
 
 
