@@ -20,4 +20,22 @@ goto bg ;
 bg:  
 // its called labeled and 
 
+/*
+lets recap today i learned 
+loops and goto statments 
+do while loop 
+switch statements
+for loop 
+do while loop 
+while looop 
+
+nested loop 
+ break and continue statment 
+ cinditons 
+ if else 
+  else if 
+  switch 
+  
+*/ 
+
 ?>
