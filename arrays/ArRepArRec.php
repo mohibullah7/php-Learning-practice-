@@ -17,4 +17,20 @@ echo "<pre>";
 print_r($repAr);
 echo "</pre>";
 
+$rep = [
+  'one'=>[12,212,12,3,4,1],
+  'two'=>[33,44,55,66,77],
+  'three'=>[12,21,33,55,77]
+];
+
+$repWith =[
+  'one' => [33,33,33],
+  'two' => [33,33,33],
+  'three' => [33,33,33],
+];
+echo "<pre>";
+$repfinal = array_replace_recursive($rep,$repWith);
+print_r ($repfinal);
+echo "</pre>";
+  
 ?>
