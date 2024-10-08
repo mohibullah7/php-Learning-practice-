@@ -24,32 +24,33 @@ $arr3 =[
  5=> ['fist name','manager',344232,23232],
 ];
 
-// echo '<table border ="2px">';
-// for($v4 >= 1 ; $v4 <= 5 ; $v4++){
-//   echo '<tr>';
-//   for($v5 = 0; $v5 < count($arr3[$v4]); $v5++){
-//     echo '<td>'. $arr3[$v4][$v5] .'</td>';
-//     echo '</tr>';
-//   }
+echo '<table border ="2px">';
+for($v4 = 1 ; $v4 <= 5 ; $v4++){
+  echo '<tr>';
+  for($v5 = 0; $v5 < count($arr3[$v4]); $v5++){
+    echo '<td>'. $arr3[$v4][$v5] .'</td>';
+  }
+  echo '</tr>';
+
  
 
-// }
-// echo '</table>';
-
-echo '<table border="2">';
-
-// Loop through the rows (1 to 5, as your array starts from index 1)
-for ($v4 = 1; $v4 <= 5; $v4++) {
-    echo '<tr>';
-    
-    // Loop through the columns within each row
-    for ($v5 = 0; $v5 < count($arr3[$v4]); $v5++) {
-        echo '<td>' . $arr3[$v4][$v5] . '</td>';
-    }
-    
-    echo '</tr>';
 }
-
 echo '</table>';
+
+// echo '<table border="2">';
+
+
+// for ($v4 = 1; $v4 <= 5; $v4++) {
+//     echo '<tr>';
+    
+   
+//     for ($v5 = 0; $v5 < count($arr3[$v4]); $v5++) {
+//         echo '<td>' . $arr3[$v4][$v5] . '</td>';
+//     }
+    
+//     echo '</tr>';
+// }
+
+// echo '</table>';
 
 ?>
