@@ -54,20 +54,42 @@ $a4 =[
         return 0 ;
       }
 
-      ($u1 < $u2) ? 1 : -1 ;
+      ($u1 > $u2) ? 1 : -1 ;
       
   }
   $u1 =[
-    1=>'red',2=>'green',3=>'44',4=>'four'
+    6=>'red',2=>'green',3=>44,4=>'four'
     ];
     $u2=[
       1=>'red', 2=> 'green', 3=>'44',
     ];
    
     
-    $uc = array_intersect_uassoc($u1,$u2,'check');
+    $uc = array_uintersect_assoc($u1,$u2,'check');
     
     echo "<pre>";
     print_r($uc);
     echo "</pre>";
+
+    /*
+     array_intersect_assoc
+Description: This function compares both values and keys of arrays and returns the elements that match both in value and key.
+Comparison Basis: Compares both the values and the keys.
+    
+    /*
+    3. array_intersect_key
+Description: This function compares the keys of arrays and returns the elements where the keys are the same, ignoring the values.
+Comparison Basis: Compares keys only.
+    */
+
+    /*
+    Summary of Differences
+array_intersect: Compares only values.
+array_intersect_assoc: Compares both values and keys.
+array_intersect_key: Compares only keys.
+array_intersect_uassoc: Compares values normally and uses a custom function for keys.
+array_intersect_ukey: Compares keys using a custom function.
+array_uintersect: Compares values using a custom function.
+    */
+
 ?>
