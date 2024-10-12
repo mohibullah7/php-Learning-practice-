@@ -28,8 +28,12 @@ print_r($v1);
  //pre
 
  $tpe = [1,2,3,4,5,6,7,8];
- $v2 = prev($tpe);
+ $v2 = key($tpe);
  echo '<pre>';
 print_r($v2);
  echo "</pre>";
+
+ //each func is used to get key and value of the cureent function 
+
+ //reset function is used to place the cursor to teh first index 
 ?>
