@@ -1,12 +1,15 @@
 <?php
+//$_SERVER is used to get the server data like 
+/*
+HTTP data 
+server inofrmation 
+which posrt is woring 
+hosting information 
+url unforamtion 
 
-//super global variables 
-//$_get $_post $_req  $_session $_server $_cookie $_file 
-//GET DATA  IS SHOW In the url while using post method the data is not showing in the url 
-//post is used with secret data like password name etc 
-//$-request is used when you dont care about get or post mehtod only to get the data from the form 
-//get is used when search queries in search bar 
+*/
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">

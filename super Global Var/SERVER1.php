@@ -1,12 +1,3 @@
-<?php
-
-//super global variables 
-//$_get $_post $_req  $_session $_server $_cookie $_file 
-//GET DATA  IS SHOW In the url while using post method the data is not showing in the url 
-//post is used with secret data like password name etc 
-//$-request is used when you dont care about get or post mehtod only to get the data from the form 
-//get is used when search queries in search bar 
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -16,7 +7,11 @@
   <title>Document</title>
 </head>
 <body>
-  <form action="testform.php" method="post">
+  <!-- if we want to show teh data in the same page not on otehr php page we acn drectly add php code inthe action=""  -->
+  <form action="<?php   
+  echo $_SERVER['PHP_SELF'];
+  ?>
+  " method="post">
     <label for="Name">Name</label>
     <input type="text" name="fname" placeholder="Name" >
     <label for="age">Age</label>
@@ -24,6 +19,14 @@
     <input type="submit" name="save" value="Submit">
 
   </form>
+
+  <?php
+  if(isset($_POST['save'])){
+    echo $_POST['fname']. "<br>";
+    echo $_POST['age']. "<br>";
+  }
+  
+  ?>
 </body>
 </html>
 
