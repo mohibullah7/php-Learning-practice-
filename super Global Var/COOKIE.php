@@ -28,4 +28,33 @@ VIEW COOKIE CALUE
 $_COOKIE['COOKIE NAME ']
 
 */ 
+  $cookie_name ='mycookie';
+  $cookie_value='this is the value of the cookie';
+$coky=setcookie(
+  $cookie_name,$cookie_value,time() + (2800 *30),'/',"",false,true);
+
 ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>
+    <?php
+
+    if(isset( $_COOKIE['mycookie'])){
+        echo $_COOKIE['mycookie'];
+    }
+    else{
+      echo "cookie is not set ";
+    }
+;
+
+    ?>
+  </h1>
+</body>
+</html>
